@@ -8,6 +8,7 @@ import MicIcon from '@material-ui/icons/Mic'
 import axios from '../axios'
 
 const Chat = ({messages}) => {
+  // console.log(messages)
   const [input,setInput]=useState('')
   const messageInfo={
     message:input,
@@ -23,10 +24,10 @@ const Chat = ({messages}) => {
   return (
     <div className="chat">
       <div className="chat__header">
-        <Avatar />
+        <Avatar src={'user.jpeg'}/>
         <div className="chat__headerInfo">
-          <h3>Room Name</h3>
-          <p>Last seen at...</p>
+          <h3>yassin</h3>
+          <p>Last seen at{new Date().toUTCString()}</p>
         </div>
 
         <div className="chat__headerRight">

@@ -33,9 +33,9 @@ const Sidebar = () => {
                 </div>
             </div>
             <div className="sidebar__chats">
-                <SidebarChat />
-                <SidebarChat />
-                <SidebarChat />
+                <SidebarChat src={'1.jpg'} name={'Ahmed'} last={'Hello yassin!!'}/>
+                <SidebarChat src={'2.jpg'} name={'Noor'} last={'Ok sea you tomorrow'}/>
+                <SidebarChat src={'3.jpg'} name={'Yousef'} last={'OK '} />
             </div>
         </div>
     )

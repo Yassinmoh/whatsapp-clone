@@ -2,13 +2,13 @@ import React from 'react'
 import '../style/sidebarchat.css'
 import {Avatar} from '@material-ui/core'
 
-const SidebarChat = () => {
+const SidebarChat = (props) => {
   return (
     <div className="sidebarChat">
-        <Avatar/>
+        <Avatar src={props.src}/>
         <div className="sidebarChat__info">
-            <h2>Room Name</h2>
-            <p>Last Message</p>
+            <h2>{props.name}</h2>
+            <p>{props.last}</p>
         </div>
     </div>
   )
